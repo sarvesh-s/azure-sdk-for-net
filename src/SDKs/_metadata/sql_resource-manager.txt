@@ -1,4 +1,3 @@
-
 Type dsc to start/install the DS Consolidated Console
 
 2018-02-05 19:32:08 UTC
