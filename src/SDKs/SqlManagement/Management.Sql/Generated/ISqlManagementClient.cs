@@ -77,11 +77,6 @@ namespace Microsoft.Azure.Management.Sql
         IBackupLongTermRetentionVaultsOperations BackupLongTermRetentionVaults { get; }
 
         /// <summary>
-        /// Gets the IRestorePointsOperations.
-        /// </summary>
-        IRestorePointsOperations RestorePoints { get; }
-
-        /// <summary>
         /// Gets the IRecoverableDatabasesOperations.
         /// </summary>
         IRecoverableDatabasesOperations RecoverableDatabases { get; }
@@ -260,6 +255,11 @@ namespace Microsoft.Azure.Management.Sql
         /// Gets the IServerDnsAliasesOperations.
         /// </summary>
         IServerDnsAliasesOperations ServerDnsAliases { get; }
+
+        /// <summary>
+        /// Gets the IDatabaseRestorePointsOperations.
+        /// </summary>
+        IDatabaseRestorePointsOperations DatabaseRestorePoints { get; }
 
     }
 }

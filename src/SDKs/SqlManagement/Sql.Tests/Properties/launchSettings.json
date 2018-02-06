@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Sql.Tests": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "TEST_CSM_ORGID_AUTHENTICATION": "SubscriptionId=3a4b538a-6e25-4888-a12a-70024fd747de;ServicePrincipal=9fc4c6ef-90b4-4a4d-bbdb-68c0dafa8392;ServicePrincipalSecret=kT+v7pBVYav6DaZLrpT7+zb+BeDA/lcPTxht/Zhedes=;AADTenant=72f988bf-86f1-41af-91ab-2d7cd011db47;Environment=Prod;HttpRecorderMode=Record;",
+        "AZURE_TEST_MODE": "Record"
+      }
+    }
+  }
+}

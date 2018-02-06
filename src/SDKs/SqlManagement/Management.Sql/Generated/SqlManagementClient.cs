@@ -82,11 +82,6 @@ namespace Microsoft.Azure.Management.Sql
         public virtual IBackupLongTermRetentionVaultsOperations BackupLongTermRetentionVaults { get; private set; }
 
         /// <summary>
-        /// Gets the IRestorePointsOperations.
-        /// </summary>
-        public virtual IRestorePointsOperations RestorePoints { get; private set; }
-
-        /// <summary>
         /// Gets the IRecoverableDatabasesOperations.
         /// </summary>
         public virtual IRecoverableDatabasesOperations RecoverableDatabases { get; private set; }
@@ -265,6 +260,11 @@ namespace Microsoft.Azure.Management.Sql
         /// Gets the IServerDnsAliasesOperations.
         /// </summary>
         public virtual IServerDnsAliasesOperations ServerDnsAliases { get; private set; }
+
+        /// <summary>
+        /// Gets the IDatabaseRestorePointsOperations.
+        /// </summary>
+        public virtual IDatabaseRestorePointsOperations DatabaseRestorePoints { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the SqlManagementClient class.
@@ -469,7 +469,6 @@ namespace Microsoft.Azure.Management.Sql
         {
             BackupLongTermRetentionPolicies = new BackupLongTermRetentionPoliciesOperations(this);
             BackupLongTermRetentionVaults = new BackupLongTermRetentionVaultsOperations(this);
-            RestorePoints = new RestorePointsOperations(this);
             RecoverableDatabases = new RecoverableDatabasesOperations(this);
             RestorableDroppedDatabases = new RestorableDroppedDatabasesOperations(this);
             Capabilities = new CapabilitiesOperations(this);
@@ -506,6 +505,7 @@ namespace Microsoft.Azure.Management.Sql
             VirtualNetworkRules = new VirtualNetworkRulesOperations(this);
             DatabaseOperations = new DatabaseOperations(this);
             ServerDnsAliases = new ServerDnsAliasesOperations(this);
+            DatabaseRestorePoints = new DatabaseRestorePointsOperations(this);
             BaseUri = new System.Uri("https://management.azure.com");
             AcceptLanguage = "en-US";
             LongRunningOperationRetryTimeout = 30;
